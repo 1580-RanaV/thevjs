@@ -8,12 +8,12 @@ const Freelance = () => {
       title: 'aldar headquarters, dubai',
       description: 'For the Aldar HQ building in Abu Dhabi, I developed a simple yet impactful design that utilizes circles and overlapping forms to create a dynamic landscape. The design takes full advantage of the natural context, introducing elements that captivate and engage users of the space. By incorporating innovative materials and design sources, the project aims to upscale the landscape and redefine the area with a modern aesthetic. The circular motifs and overlaps not only enhance visual interest but also foster a sense of fluidity and harmony within the space. This approach ensures that the landscape complements the architectural integrity of the headquarters while offering a sophisticated and inviting environment for all who experience it.',
       images: [
-        '/pixel/aldar/pic (1).png',
-        '/pixel/aldar/pic (6).png',
-        '/pixel/aldar/pic (2).png',
-        '/pixel/aldar/pic (3).png',
-        '/pixel/aldar/pic (4).png',
-        '/pixel/aldar/pic (5).png',
+        '/pixel/aldar/pic1.PNG',
+        '/pixel/aldar/pic6.PNG',
+        '/pixel/aldar/pic2.PNG',
+        '/pixel/aldar/pic3.png',
+        '/pixel/aldar/pic4.PNG',
+        '/pixel/aldar/pic5.PNG',
       ],
     },
 
