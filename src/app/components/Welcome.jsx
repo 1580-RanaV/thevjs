@@ -32,8 +32,7 @@ const Welcome = () => {
         <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden flex-shrink-0">
           <Image 
             src="/wallpaper.jpg" 
-            alt="V Jaya Surya" 
-            layout="responsive" 
+            alt="V Jaya Surya"
             width={100} 
             height={100} 
             className="w-full h-full object-cover aspect-square"

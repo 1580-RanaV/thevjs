@@ -86,8 +86,8 @@ const Page = () => {
                 <Image
                   src="/x.svg"
                   alt="X (Twitter)"
-                  width={160}
-                  height={160}
+                  width={600}
+                  height={600}
                   className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm"
                 />
               </Link>
@@ -99,7 +99,7 @@ const Page = () => {
               <input
                 className="font-regular px-4 py-3 w-full rounded-lg bg-neutral-800 text-white"
                 type="text"
-                placeholder="whats up ?"
+                placeholder="What&apos;s up?"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
@@ -109,7 +109,7 @@ const Page = () => {
               <input
                 className="font-regular px-4 py-3 w-full rounded-lg bg-neutral-800 text-white"
                 type="email"
-                placeholder="email address pls"
+                placeholder="Email address, please"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />

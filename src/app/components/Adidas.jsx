@@ -134,9 +134,10 @@ const Adidas = () => {
   };
 
   return (
-    <div className="space-y-4 w-full">
+    <div className="space-y-4">
       {workDetails.map((work, index) => (
         <div key={index} className="border-b border-neutral-800">
+          {/* Project Title */}
           <h1
             onClick={() => toggleWork(index)}
             className="font-semibold uppercase cursor-pointer py-4 hover:text-neutral-500 transition-colors"
@@ -144,24 +145,26 @@ const Adidas = () => {
             {work.title}
           </h1>
 
+          {/* Project Details */}
           {openWork === index && (
-            <div className="pb-8">
+            <div className="pb-8 transition-all duration-300 ease-in-out">
+              {/* Project Description */}
               <p className="text-neutral-200 font-regular mb-6">{work.description}</p>
 
+              {/* Project Images */}
               <div className="space-y-4">
                 {work.images.map((image, imgIndex) => (
                   <div
                     key={imgIndex}
-                    className="w-full h-[400px] bg-neutral-900"
+                    className="w-full h-full bg-neutral-900 overflow-hidden rounded-lg"
                   >
                     <Image
                       src={image}
                       layout="responsive" 
                       width={100} 
-                      height={100} 
-                      alt={`Work image ${imgIndex + 1}`}
-                      loading="lazy" // This enables lazy loading
-                      className="w-full h-full object-cover"
+                      height={900}
+                      alt={`${work.title} - Image ${imgIndex + 1}`}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
                 ))}

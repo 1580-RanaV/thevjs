@@ -181,13 +181,13 @@ const Freelance = () => {
                 {work.images.map((image, imgIndex) => (
                   <div
                     key={imgIndex}
-                    className="w-full h-[500px] bg-neutral-900 overflow-hidden rounded-lg"
+                    className="w-full h-full bg-neutral-900 overflow-hidden rounded-lg"
                   >
                     <Image
                       src={image}
                       layout="responsive" 
                       width={100} 
-                      height={100}
+                      height={900}
                       alt={`${work.title} - Image ${imgIndex + 1}`}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
