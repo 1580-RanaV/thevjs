@@ -20,11 +20,11 @@ const Page = () => {
             <Link href="/work" className="font-semibold underline">
               work
             </Link>{' '}
-            🡥 to view all my works, or contact me at{' '}
+            to view all my works, or contact me at{' '}
             <Link href="/contact" className="font-semibold underline">
               contact
             </Link>{' '}
-            🡥 for any queries or business.
+            for any queries or business.
           </p>
         </div>
 
