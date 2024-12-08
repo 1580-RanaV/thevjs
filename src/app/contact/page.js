@@ -47,8 +47,8 @@ const Page = () => {
         <div className="max-w-3xl w-full">
           <Navbar />
           <section className="mt-12">
-            <h1 className="font-semibold text-4xl uppercase">Reach Out to Me</h1>
-            <p className="font-regular mt-12 text-justify leading-relaxed">
+            <h1 className="font-semibold text-4xl uppercase">get in touch with me</h1>
+            <p className="text-lg font-regular mt-12 text-justify leading-relaxed">
               Feel free to reach out during business hours for general inquiries. For urgent or important matters, I&apos;m available at any time via the listed channels. If I&apos;m unavailable, you can always leave a message below—I&apos;ll check it regularly and respond as soon as I can.
             </p>
 
@@ -59,7 +59,7 @@ const Page = () => {
                 rel="noopener noreferrer"
                 className="hover:opacity-50 transition-opacity duration-300"
               >
-                <Image src="/mail.svg" alt="Email" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+                <Image src="/mail.svg" alt="Email" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/viyyapujayasurya/"
@@ -67,7 +67,7 @@ const Page = () => {
                 rel="noopener noreferrer"
                 className="hover:opacity-50 transition-opacity duration-300"
               >
-                <Image src="/linkedin.svg" alt="LinkedIn" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+                <Image src="/linkedin.svg" alt="LinkedIn" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
               </Link>
               <Link
                 href="https://www.instagram.com/jaya_surya_js/"
@@ -75,7 +75,7 @@ const Page = () => {
                 rel="noopener noreferrer"
                 className="hover:opacity-50 transition-opacity duration-300"
               >
-                <Image src="/insta.svg" alt="Instagram" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+                <Image src="/insta.svg" alt="Instagram" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
               </Link>
               <Link
                 href="https://twitter.com"
@@ -86,8 +86,8 @@ const Page = () => {
                 <Image
                   src="/x.svg"
                   alt="X (Twitter)"
-                  width={600}
-                  height={600}
+                  width={400}
+                  height={400}
                   className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm"
                 />
               </Link>

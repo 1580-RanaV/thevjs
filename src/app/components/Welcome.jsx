@@ -10,15 +10,15 @@ const Welcome = () => {
 
   useEffect(() => {
     // Animate to full values when component mounts
-    setProjectCount(204)
-    setAreaCount(3.5)
-    setCountriesCount(22)
+    setProjectCount(353)
+    setAreaCount(2.5)
+    setCountriesCount(45)
   }, [])
 
   return (
     <section className="mt-12">
       <div className="flex items-center justify-between">
-        {/* Left Side Text */}
+
         <div className="flex flex-col space-y-3">
           <h1 className="font-semibold text-4xl uppercase">V Jaya Surya</h1>
           <span className="text-neutral-200 font-regular">Senior Retail Designer</span>
@@ -28,7 +28,6 @@ const Welcome = () => {
           </p>
         </div>
         
-        {/* Right Side Image */}
         <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden flex-shrink-0">
           <Image 
             src="/wallpaper.jpg" 
@@ -39,7 +38,7 @@ const Welcome = () => {
           />
         </div>
       </div>
-      <p className="font-regular mt-12 text-justify leading-relaxed">
+      <p className="font-regular mt-12 text-justify text-lg leading-relaxed">
         Hello. I am V Jaya Surya, a Retail Design Manager specializing
         in concept development, blending architecture, interior design,
         and visualization to craft inspiring retail spaces.
@@ -51,8 +50,8 @@ const Welcome = () => {
       
       <div className="mt-20 flex justify-between">
         <div>
-          <span className="font-semibold block">PROJECTS</span>
-          <span className="font-bold text-5xl">
+          <span className="font-semibold block text-xl">PROJECTS</span>
+          <span className="font-bold text-6xl">
             <NumberFlow 
               value={projectCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
@@ -62,8 +61,8 @@ const Welcome = () => {
           </span>
         </div>
         <div>
-          <span className="font-semibold block">AREA IN SQ.FT</span>
-          <span className="font-bold text-5xl">
+          <span className="font-semibold block text-xl">AREA IN SQ.FT</span>
+          <span className="font-bold text-6xl">
             <NumberFlow 
               value={areaCount} 
               format={{ maximumFractionDigits: 1 }}
@@ -72,11 +71,11 @@ const Welcome = () => {
               opacityTiming={{ duration: 1000, easing: 'ease-in-out' }}
             />
           </span>
-          <span className="font-semibold text-5xl">M</span>
+          <span className="font-semibold text-6xl">M</span>
         </div>
         <div>
-          <span className="font-semibold block">COUNTRIES</span>
-          <span className="font-bold text-5xl">
+          <span className="font-semibold block text-xl">COUNTRIES</span>
+          <span className="font-bold text-6xl">
             <NumberFlow 
               value={countriesCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
