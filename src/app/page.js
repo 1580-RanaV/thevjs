@@ -46,7 +46,7 @@ const Page = () => {
 
           <section className="mt-16">
             <h2 className="font-semibold text-5xl md:text-5xl uppercase">
-              Work. Recognition. Awards.
+              Work. IMPACT. Awards.
             </h2>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
               My work has consistently garnered recognition in the architectural community, with accolades such as the <span className='font-medium'>Commercial Project of the Year</span> and <span className='font-medium'>Retail Interior Design of the Year</span> highlighting my commitment to innovation and excellence. I was also honored at the <span className='font-medium'>Design Middle East - Architecture Leaders Awards 2023</span> and received special mentions at prestigious events like the <span className='font-medium'>NASA Louis I. Khan Trophy</span> and the <span className='font-medium'>HUDCO Trophy</span>. Additionally, Ive contributed to major architectural events, including serving as the Organizing Committee Head for <span className='font-medium'>Archcult</span> and holding leadership roles in <span className='font-medium'>NASA</span> events at NIT Trichy. These milestones reflect my dedication to pushing creative boundaries and shaping the future of architecture.

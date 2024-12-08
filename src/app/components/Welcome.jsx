@@ -20,10 +20,10 @@ const Welcome = () => {
       <div className="flex items-center justify-between">
 
         <div className="flex flex-col space-y-3">
-          <h1 className="font-semibold text-5xl uppercase">V Jaya Surya</h1>
-          <span className="text-neutral-200 font-regular">Senior Retail Designer</span>
-          <span className="text-neutral-200 font-regular">Pixel5</span>
-          <p className="text-neutral-200 font-regular">
+          <h1 className="font-semibold text-4xl uppercase">V Jaya Surya</h1>
+          <span className="text-neutral-200 font-regular text-sm">Senior Retail Designer</span>
+          <span className="text-neutral-200 font-regular text-sm">Pixel5</span>
+          <p className="text-neutral-200 font-regular text-sm">
             Dubai, UAE
           </p>
         </div>
