@@ -50,8 +50,8 @@ const Welcome = () => {
       
       <div className="mt-20 flex justify-between">
         <div>
-          <span className="font-semibold block text-xl">PROJECTS</span>
-          <span className="font-bold text-6xl">
+          <span className="font-semibold block">PROJECTS</span>
+          <span className="font-bold text-5xl">
             <NumberFlow 
               value={projectCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
@@ -61,8 +61,8 @@ const Welcome = () => {
           </span>
         </div>
         <div>
-          <span className="font-semibold block text-xl">AREA IN SQ.FT</span>
-          <span className="font-bold text-6xl">
+          <span className="font-semibold block">AREA IN SQ.FT</span>
+          <span className="font-bold text-5xl">
             <NumberFlow 
               value={areaCount} 
               format={{ maximumFractionDigits: 1 }}
@@ -71,11 +71,11 @@ const Welcome = () => {
               opacityTiming={{ duration: 1000, easing: 'ease-in-out' }}
             />
           </span>
-          <span className="font-semibold text-6xl">M</span>
+          <span className="font-semibold text-5xl">M</span>
         </div>
         <div>
-          <span className="font-semibold block text-xl">COUNTRIES</span>
-          <span className="font-bold text-6xl">
+          <span className="font-semibold block">COUNTRIES</span>
+          <span className="font-bold text-5xl">
             <NumberFlow 
               value={countriesCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
