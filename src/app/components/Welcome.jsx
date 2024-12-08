@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import NumberFlow from '@number-flow/react'
+import Image from 'next/image'
 
 const Welcome = () => {
   const [projectCount, setProjectCount] = useState(0)
@@ -29,9 +30,12 @@ const Welcome = () => {
         
         {/* Right Side Image */}
         <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden flex-shrink-0">
-          <img 
+          <Image 
             src="/wallpaper.jpg" 
             alt="V Jaya Surya" 
+            layout="responsive" 
+            width={100} 
+            height={100} 
             className="w-full h-full object-cover aspect-square"
           />
         </div>

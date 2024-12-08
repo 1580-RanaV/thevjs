@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Image from 'next/image';
 const Freelance = () => {
   const [openWork, setOpenWork] = useState(null);
 
@@ -183,8 +183,11 @@ const Freelance = () => {
                     key={imgIndex}
                     className="w-full h-[500px] bg-neutral-900 overflow-hidden rounded-lg"
                   >
-                    <img
+                    <Image
                       src={image}
+                      layout="responsive" 
+                      width={100} 
+                      height={100}
                       alt={`${work.title} - Image ${imgIndex + 1}`}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />

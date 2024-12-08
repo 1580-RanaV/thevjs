@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Freelance = () => {
   const [openWork, setOpenWork] = useState(null);
@@ -108,8 +109,11 @@ const Freelance = () => {
                     key={imgIndex}
                     className="w-full h-[400px] bg-neutral-900"
                   >
-                    <img
+                    <Image
                       src={image}
+                      layout="responsive" 
+                      width={100} 
+                      height={100}
                       alt={`Work image ${imgIndex + 1}`}
                       loading="lazy"
                       className="w-full h-full object-cover"

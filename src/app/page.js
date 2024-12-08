@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import Footer from './components/Footer';
+import Image from 'next/image';
 
 const Page = () => {
   return (
@@ -45,8 +46,8 @@ const Page = () => {
             <p className='font-regular mt-4 md:mt-6 text-justify leading-relaxed text-sm md:text-base'>
               My work has consistently garnered recognition in the architectural community, with accolades such as the <span className='font-medium'>Commercial Project of the Year</span> and <span className='font-medium'>Retail Interior Design of the Year</span> highlighting my commitment to innovation and excellence. I was also honored at the <span className='font-medium'>Design Middle East - Architecture Leaders Awards 2023</span> and received special mentions at prestigious events like the <span className='font-medium'>NASA Louis I. Khan Trophy</span> and the <span className='font-medium'>HUDCO Trophy</span>. Additionally, I've contributed to major architectural events, including serving as the Organizing Committee Head for <span className='font-medium'>Archcult</span> and holding leadership roles in <span className='font-medium'>NASA</span> events at NIT Trichy. These milestones reflect my dedication to pushing creative boundaries and shaping the future of architecture.
             </p>
-            <img className='mt-8 md:mt-12 w-full' src="/awards/award1.png" alt="awards" />
-            <img className='mt-6 w-full' src="/awards/ala2.jpg" alt="awards" />
+            <Image className='mt-8 md:mt-12 w-full' src="/awards/award1.png" alt="awards" layout="responsive" width={100} height={100}  />
+            <Image className='mt-6 w-full' src="/awards/ala2.jpg" alt="awards" layout="responsive" width={100} height={100}  />
           </div>
 
           <div className='mt-8 md:mt-12 text-neutral-600 font-regular text-center px-4 sm:px-0'>

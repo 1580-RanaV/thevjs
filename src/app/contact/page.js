@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { supabase } from '../../utils/supabaseClient';
+import Image from 'next/image';
 
 const Page = () => {
   const [message, setMessage] = useState('');
@@ -59,7 +60,7 @@ const Page = () => {
             rel="noopener noreferrer"
             className="hover:opacity-50 transition-opacity duration-300"
           >
-            <img src="/mail.svg" alt="Email" className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-full" />
+            <Image src="/mail.svg" alt="Email" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/viyyapujayasurya/"
@@ -67,7 +68,7 @@ const Page = () => {
             rel="noopener noreferrer"
             className="hover:opacity-50 transition-opacity duration-300"
           >
-            <img src="/linkedin.svg" alt="LinkedIn" className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-full" />
+            <Image src="/linkedin.svg" alt="LinkedIn" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
           </Link>
           <Link
             href="https://www.instagram.com/jaya_surya_js/"
@@ -75,7 +76,7 @@ const Page = () => {
             rel="noopener noreferrer"
             className="hover:opacity-50 transition-opacity duration-300"
           >
-            <img src="/insta.svg" alt="Instagram" className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-full" />
+            <Image src="/insta.svg" alt="Instagram" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
           </Link>
           <Link
             href="https://twitter.com"
@@ -83,7 +84,7 @@ const Page = () => {
             rel="noopener noreferrer"
             className="hover:opacity-50 transition-opacity duration-300"
           >
-            <img src="/x.svg" alt="X (Twitter)" className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-full" />
+            <img src="/x.svg" alt="X (Twitter)" className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
           </Link>
         </div>
 

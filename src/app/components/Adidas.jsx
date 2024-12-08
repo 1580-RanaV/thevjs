@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Adidas = () => {
   const [openWork, setOpenWork] = useState(null);
@@ -153,8 +154,11 @@ const Adidas = () => {
                     key={imgIndex}
                     className="w-full h-[400px] bg-neutral-900"
                   >
-                    <img
+                    <Image
                       src={image}
+                      layout="responsive" 
+                      width={100} 
+                      height={100} 
                       alt={`Work image ${imgIndex + 1}`}
                       loading="lazy" // This enables lazy loading
                       className="w-full h-full object-cover"

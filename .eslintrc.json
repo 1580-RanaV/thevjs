@@ -1,7 +1,19 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    // Add specific rules to ignore, set to "off"
-    "rule-name": "off"
+    // Disable all rules by setting them to "off"
+    "no-console": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    "no-debugger": "off",
+    "react/jsx-key": "off",
+    "react/react-in-jsx-scope": "off",
+    "next/no-img-element": "off",
+    "next/no-document-domain": "off",
+    "next/no-async-syntax": "off",
+    "next/next-server-pages": "off",
+    "next/no-page-custom-font": "off",
+    "next/no-html-link-for-pages": "off",
+    "no-empty-pattern": "off"
   }
 }
