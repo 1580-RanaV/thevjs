@@ -20,17 +20,17 @@ const Page = () => {
         </section>
 
         <section className="mt-12">
-          <h1 className="font-semibold text-4xl uppercase mb-10">adidas - handpicked</h1>
+          <h1 className="font-semibold text-5xl uppercase mb-10">adidas: handpicked</h1>
           <Adidas />
         </section>
 
         <section className="mt-24">
-          <h1 className="font-semibold text-4xl uppercase mb-10">works from Pixel5</h1>
+          <h1 className="font-semibold text-5xl uppercase mb-10">works from Pixel5</h1>
           <Pixel />
         </section>
 
         <section className="mt-24">
-          <h1 className="font-semibold text-4xl uppercase mb-10">works from buildnext</h1>
+          <h1 className="font-semibold text-5xl uppercase mb-10">works from buildnext</h1>
           <Freelance />
         </section>
 

@@ -8,7 +8,7 @@ import ExperienceEntry from './components/ExperienceEntry';
 
 const Page = () => {
   return (
-    <div className="bg-neutral-950 text-white min-h-screen flex flex-col">
+    <div className="bg-neutral-950 text-white min-h-screen flex flex-col px-5 py-5">
       <Navbar />
       <main className="flex-grow px-4 sm:px-5 py-5 flex justify-center">
         <div className="container mx-auto max-w-3xl">
@@ -30,7 +30,7 @@ const Page = () => {
 
 
           <section className="mt-16">
-            <h2 className="font-semibold text-2xl md:text-4xl uppercase">
+            <h2 className="font-semibold text-5xl md:text-5xl uppercase">
               Innovate. Push Creative Boundaries. Every single day.
             </h2>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
@@ -45,7 +45,7 @@ const Page = () => {
           </section>
 
           <section className="mt-16">
-            <h2 className="font-semibold text-2xl md:text-4xl uppercase">
+            <h2 className="font-semibold text-5xl md:text-5xl uppercase">
               Work. Recognition. Awards.
             </h2>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
@@ -62,7 +62,7 @@ const Page = () => {
           </section>
 
           <section className="mt-16">
-            <h2 className="font-semibold text-2xl md:text-4xl uppercase">
+            <h2 className="font-semibold text-5xl md:text-5xl uppercase">
               Evolution. Growth. Journey.
             </h2>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
@@ -87,7 +87,7 @@ const Page = () => {
 
           <section>
           <div className='mt-16 md:mt-16'>
-            <span className='font-semibold text-2xl md:text-4xl uppercase'>WHATS AHEAD. VISION. FUTURE.</span>
+            <span className='font-semibold text-5xl md:text-5xl uppercase'>WHATS AHEAD. VISION. FUTURE.</span>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
               As I continue to evolve in the field of architecture, my future goals are centered around expanding my expertise in creating innovative, sustainable, and functional spaces. I aim to work on projects that challenge traditional design norms and push the boundaries of what is possible, while staying true to the core principles of architecture. My focus will remain on designing spaces that are not only visually striking but also adaptable, efficient, and responsive to the needs of their users and the environment.
               <br></br><br></br>
