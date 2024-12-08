@@ -14,7 +14,6 @@ const Page = () => {
   const [feedback, setFeedback] = useState('');
 
   const handleSubmit = async () => {
-    // Check if fields are empty
     if (!message || !email) {
       setFeedback('Please fill in all fields.');
       return;
@@ -24,23 +23,23 @@ const Page = () => {
     setFeedback('');
 
     const { data, error } = await supabase.from('messages').insert([
-        {
-          email,
-          message,
-        },
-      ]);
+      {
+        email,
+        message,
+      },
+    ]);
 
-      if (error) {
-        setFeedback('Couldn\'t get it, can you pls try later? :(');
-        console.error(error);
-      } else {
-        setFeedback('Got your message! Expect a response soon. :)');
-        setMessage('');
-        setEmail('');
-      }
-  
-      setIsSubmitting(false);
-    };
+    if (error) {
+      setFeedback('Couldn&apos;t get it, can you please try later? :(');
+      console.error(error);
+    } else {
+      setFeedback('Got your message! Expect a response soon. :)');
+      setMessage('');
+      setEmail('');
+    }
+
+    setIsSubmitting(false);
+  };
 
   return (
     <div className="bg-neutral-950">
@@ -50,43 +49,49 @@ const Page = () => {
           <section className="mt-12">
             <h1 className="font-semibold text-4xl uppercase">Reach Out to Me</h1>
             <p className="font-regular mt-12 text-justify leading-relaxed">
-              Feel free to reach out during business hours for general inquiries. For urgent or important matters, I'm available at any time via the listed channels. If I'm unavailable, you can always leave a message below—I'll check it regularly and respond as soon as I can.
+              Feel free to reach out during business hours for general inquiries. For urgent or important matters, I&apos;m available at any time via the listed channels. If I&apos;m unavailable, you can always leave a message below—I&apos;ll check it regularly and respond as soon as I can.
             </p>
 
-                    <div className="flex flex-wrap justify-center gap-2 mt-12">
-          <Link
-            href="mailto:jayasurya2223@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-50 transition-opacity duration-300"
-          >
-            <Image src="/mail.svg" alt="Email" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/viyyapujayasurya/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-50 transition-opacity duration-300"
-          >
-            <Image src="/linkedin.svg" alt="LinkedIn" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
-          </Link>
-          <Link
-            href="https://www.instagram.com/jaya_surya_js/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-50 transition-opacity duration-300"
-          >
-            <Image src="/insta.svg" alt="Instagram" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
-          </Link>
-          <Link
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-50 transition-opacity duration-300"
-          >
-            <img src="/x.svg" alt="X (Twitter)" className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
-          </Link>
-        </div>
+            <div className="flex flex-wrap justify-center gap-2 mt-12">
+              <Link
+                href="mailto:jayasurya2223@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-50 transition-opacity duration-300"
+              >
+                <Image src="/mail.svg" alt="Email" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/viyyapujayasurya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-50 transition-opacity duration-300"
+              >
+                <Image src="/linkedin.svg" alt="LinkedIn" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/jaya_surya_js/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-50 transition-opacity duration-300"
+              >
+                <Image src="/insta.svg" alt="Instagram" width={600} height={600} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+              </Link>
+              <Link
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-50 transition-opacity duration-300"
+              >
+                <Image
+                  src="/x.svg"
+                  alt="X (Twitter)"
+                  width={160}
+                  height={160}
+                  className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm"
+                />
+              </Link>
+            </div>
 
             <p className="font-regular mt-12">Leave a message here</p>
 
@@ -130,10 +135,9 @@ const Page = () => {
         </div>
       </div>
 
-      <div className = 'mt-6'>
-      <Footer />
+      <div className="mt-6">
+        <Footer />
       </div>
-
     </div>
   );
 };
