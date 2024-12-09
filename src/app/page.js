@@ -37,7 +37,7 @@ const Page = () => {
                 Fueled by an unrelenting passion for architecture and design, I embrace every project as an opportunity to innovate and redefine possibilities. With a thirst for knowledge and a commitment to growth, I approach my work with zeal, continually honing my skills and challenging creative limits to leave a meaningful impact.
             </p>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
-                As an architect based in Dubai with over 3 years of regional experience, I specialize in transforming concepts into compelling visual narratives, utilizing advanced design tools like SketchUp, D5, AutoCAD, Lumion, Enscape, VRay, and Revit. With a strong focus on the retail sector, I have successfully overseen more than 200 global projects, covering architecture, interiors, F&B, landscape, planning, and office spaces.
+                As an architect based in Dubai with over 3 years of regional experience, I specialize in transforming concepts into compelling visual narratives, utilizing advanced design tools like SketchUp, D5, AutoCAD, Lumion, Enscape, VRay, and Revit. With a strong focus on the retail sector, I have successfully overseen more than 300 global projects, covering architecture, interiors, F&B, landscape, planning, and office spaces.
             </p>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
                 My collaborations with prestigious brands such as Adidas, Aldar, Al Futtaim Group, BOSS, Cartier, HUGO, and Roberto Cavalli demonstrate my ability to deliver exceptional design solutions across various industries. Driven by an unwavering passion for innovation, I am constantly refining my skills and pushing creative boundaries, always striving to contribute to impactful and forward-thinking projects.
@@ -63,7 +63,7 @@ const Page = () => {
 
           <section className="mt-16">
             <h2 className="font-semibold text-5xl md:text-5xl uppercase">
-              Evolution. Growth. Journey.
+              learn. evolve. Journey.
             </h2>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
             With extensive experience spanning various sectors including architecture, urban planning, interiors, and retail design, I have worked on over 350 projects, delivering innovative and impactful solutions. My expertise includes managing diverse teams, developing design concepts, and executing customer-centric spaces that enhance brand identity. Throughout my career, I have taken on key roles in design coordination and project management, ensuring seamless collaboration across disciplines and contributing to the successful realization of both small and large-scale projects.
@@ -87,7 +87,7 @@ const Page = () => {
 
           <section>
           <div className='mt-16 md:mt-16'>
-            <span className='font-semibold text-5xl md:text-5xl uppercase'>WHATS AHEAD. VISION. FUTURE.</span>
+            <span className='font-semibold text-5xl md:text-5xl uppercase'>dream. VISION. FUTURE.</span>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
               As I continue to evolve in the field of architecture, my future goals are centered around expanding my expertise in creating innovative, sustainable, and functional spaces. I aim to work on projects that challenge traditional design norms and push the boundaries of what is possible, while staying true to the core principles of architecture. My focus will remain on designing spaces that are not only visually striking but also adaptable, efficient, and responsive to the needs of their users and the environment.
               <br></br><br></br>
