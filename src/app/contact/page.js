@@ -49,7 +49,7 @@ const Page = () => {
           <section className="mt-12">
             <h1 className="font-semibold text-5xl uppercase">get in touch with me</h1>
             <p className="text-lg font-regular mt-12 text-justify leading-relaxed">
-              Feel free to reach out during business hours for general inquiries. For urgent or important matters, I&apos;m available at any time via the listed channels. If I&apos;m unavailable, you can always leave a message below—I&apos;ll check it regularly and respond as soon as I can.
+              Feel free to reach out during business hours for general inquiries. For urgent or important matters, I&apos;m available at any time via the listed channels. If I&apos;m unavailable, you can always leave a message below—I&apos;ll respond as soon as I can.
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 mt-12">
@@ -135,7 +135,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="mt-6">
+      <div className="mt-24">
         <Footer />
       </div>
     </div>
