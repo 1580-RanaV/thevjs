@@ -54,7 +54,7 @@ const Page = () => {
             <Image
               src="/awards/award1.png"
               alt="Award for Commercial Project of the Year"
-              className='mt-12'
+              className='mt-12 rounded-lg object-cover transition-transform duration-500 hover:scale-105'
               layout="responsive"
               width={100}
               height={100}
@@ -84,6 +84,20 @@ const Page = () => {
               position="Interior Designer"
             />
           </section>
+
+          <div className="mt-8 text-neutral-600 text-center">
+          <p className="text-sm sm:text-base">
+            Head to{' '}
+            <Link href="/work" className="font-semibold underline">
+              work
+            </Link>{' '}
+            to view all my works, or contact me at{' '}
+            <Link href="/contact" className="font-semibold underline">
+              contact
+            </Link>{' '}
+            for any queries or business.
+          </p>
+        </div>
 
           <section>
           <div className='mt-16 md:mt-16'>

@@ -52,7 +52,7 @@ const Page = () => {
               Feel free to reach out during business hours for general inquiries. For urgent or important matters, I&apos;m available at any time via the listed channels. If I&apos;m unavailable, you can always leave a message below—I&apos;ll respond as soon as I can.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-2 mt-12">
+            <div className="flex flex-wrap justify-between gap-2 mt-12">
               <Link
                 href="mailto:jayasurya2223@gmail.com"
                 target="_blank"
@@ -77,7 +77,7 @@ const Page = () => {
               >
                 <Image src="/insta.svg" alt="Instagram" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
               </Link>
-              <Link
+              {/* <Link
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -90,7 +90,7 @@ const Page = () => {
                   height={400}
                   className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm"
                 />
-              </Link>
+              </Link> */}
             </div>
 
             <p className="font-regular text-lg mt-12">Leave a message here</p>

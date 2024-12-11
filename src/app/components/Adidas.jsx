@@ -149,7 +149,7 @@ const Adidas = () => {
           {openWork === index && (
             <div className="pb-8 transition-all duration-300 ease-in-out">
               {/* Project Description */}
-              <p className="text-neutral-200 font-regular mb-6">{work.description}</p>
+              <p className="text-neutral-200 text-justify font-regular mb-6">{work.description}</p>
 
               {/* Project Images */}
               <div className="space-y-4">
