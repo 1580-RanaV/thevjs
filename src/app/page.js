@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <div className="bg-neutral-950 text-white min-h-screen flex flex-col px-5 py-5">
       <Navbar />
-      <main className="flex-grow px-4 sm:px-5 py-5 flex justify-center">
+      <main className="flex-grow px-5 sm:px-5 py-5 flex justify-center">
         <div className="container mx-auto max-w-3xl">
           <Welcome />
           

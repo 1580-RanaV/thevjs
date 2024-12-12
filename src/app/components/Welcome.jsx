@@ -21,7 +21,7 @@ const Welcome = () => {
 
         <div className="flex flex-col space-y-3">
           <h1 className="font-semibold text-4xl uppercase">V Jaya Surya</h1>
-          <span className="text-neutral-200 font-regular text-sm">Senior Retail Designer</span>
+          <span className="text-neutral-200 font-regular text-sm">Design Manager</span>
           <span className="text-neutral-200 font-regular text-sm">Pixel5</span>
           <p className="text-neutral-200 font-regular text-sm">
             Dubai, UAE
