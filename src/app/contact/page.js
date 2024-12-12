@@ -93,7 +93,20 @@ const Page = () => {
               </Link> */}
             </div>
 
-            <p className="font-regular text-lg mt-12">Leave a message here</p>
+            <div className="mt-12 text-neutral-600 text-center">
+          <p className="text-sm sm:text-base">
+            Head to{' '}
+            <Link href="/work" className="font-semibold underline">
+              work
+            </Link>{' '}
+            to view all my works, or go back to{' '}
+            <Link href="/" className="font-semibold underline">
+              home.
+            </Link>{' '}
+          </p>
+        </div>
+
+            <p className="font-regular text-lg mt-24">Leave a message here</p>
 
             <div className="flex py-6 items-center">
               <input

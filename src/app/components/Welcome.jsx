@@ -28,7 +28,7 @@ const Welcome = () => {
           </p>
         </div>
         
-        <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden flex-shrink-0">
+        <div className="w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden flex-shrink-0">
           <Image 
             src="/wallpaper.jpg" 
             alt="V Jaya Surya"
@@ -55,7 +55,7 @@ const Welcome = () => {
             <NumberFlow 
               value={projectCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
-              spinTiming={{ duration: 3000 }}
+              spinTiming={{ duration: 4500 }}
               opacityTiming={{ duration: 2000, easing: 'ease-in-out' }}
             />
           </span>
@@ -67,7 +67,7 @@ const Welcome = () => {
               value={areaCount} 
               format={{ maximumFractionDigits: 1 }}
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
-              spinTiming={{ duration: 4000 }}
+              spinTiming={{ duration: 5500 }}
               opacityTiming={{ duration: 1000, easing: 'ease-in-out' }}
             />
           </span>
@@ -79,7 +79,7 @@ const Welcome = () => {
             <NumberFlow 
               value={countriesCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
-              spinTiming={{ duration: 3000 }}
+              spinTiming={{ duration: 4500 }}
               opacityTiming={{ duration: 2000, easing: 'ease-in-out' }}
             />
           </span>
