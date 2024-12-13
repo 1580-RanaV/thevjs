@@ -106,7 +106,7 @@ const Freelance = () => {
           <div className='flex justify-between'>
           <h1
             onClick={() => toggleWork(index)}
-            className="font-semibold uppercase cursor-pointer py-4 hover:text-neutral-500 transition-colors"
+            className="basis-1/2 font-semibold uppercase cursor-pointer py-4 hover:text-neutral-500 transition-colors"
           >
             {work.title}
           </h1>
