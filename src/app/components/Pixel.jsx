@@ -5,7 +5,7 @@ const Freelance = () => {
 
   const workDetails = [
     {
-      title: 'aldar headquarters, dubai',
+      title: 'aldar headquarters',
       place:'al raha, abu dhabi, uae',
       description: 'For the Aldar HQ building in Abu Dhabi, I developed a simple yet impactful design that utilizes circles and overlapping forms to create a dynamic landscape. The design takes full advantage of the natural context, introducing elements that captivate and engage users of the space. By incorporating innovative materials and design sources, the project aims to upscale the landscape and redefine the area with a modern aesthetic. The circular motifs and overlaps not only enhance visual interest but also foster a sense of fluidity and harmony within the space. This approach ensures that the landscape complements the architectural integrity of the headquarters while offering a sophisticated and inviting environment for all who experience it.',
       images: [
@@ -33,7 +33,7 @@ const Freelance = () => {
     },
 
     {
-        title: 'al futtaim rental experience centre',
+        title: 'al futtaim rental experience',
         place:'dubai, uae',
         description: 'The experience center design embraces minimalism, enhancing customer engagement with thoughtful ideas and materials. Clean lines, open spaces, and a neutral palette create a serene environment, while natural materials add warmth. The layout ensures seamless flow, with functional elements and subtle technology integration that complement the minimalist aesthetic.',
         images: [
@@ -115,7 +115,7 @@ const Freelance = () => {
 
     {
         title: 'obriens',
-        place:'dubai airport, dubai, uae',
+        place:'dubai airport, uae',
         description: 'For the Dubai Airport Terminal 1 food court, I prioritized optimal spatial arrangement with diverse seating options, minimal lighting details, and subtle color schemes, creating an inviting ambiance that enhances the dining experience in a busy airport setting.',
         images: [
           '/pixel/obriens/pic (1).png',
