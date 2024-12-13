@@ -6,6 +6,7 @@ import Freelance from '../components/Freelance';
 import Pixel from '../components/Pixel';
 import Adidas from '../components/Adidas';
 import Footer from '../components/Footer';
+import BackToTopButton from '../components/BackToTopButton';
 
 const Page = () => {
   return (
@@ -33,6 +34,8 @@ const Page = () => {
           <h1 className="font-semibold text-5xl uppercase mb-10">works from buildnext</h1>
           <Freelance />
         </section>
+        
+          <BackToTopButton />
 
       </div>
     </div>

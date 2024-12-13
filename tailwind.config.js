@@ -11,6 +11,22 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		keyframes: {
+			popUp: {
+			  '0%': { transform: 'scale(0.5)', opacity: '0' },
+			  '80%': { transform: 'scale(1.1)', opacity: '1' },
+			  '100%': { transform: 'scale(1)' },
+			},
+			popOut: {
+			  '0%': { transform: 'scale(1)', opacity: '1' },
+			  '80%': { transform: 'scale(1.1)', opacity: '0.5' },
+			  '100%': { transform: 'scale(0.5)', opacity: '0' },
+			},
+		  },
+		  animation: {
+			popUp: 'popUp 0.4s ease-in-out',
+			popOut: 'popOut 0.4s ease-in-out',
+		  },
 		fontFamily: {
 			regular: ['font-regular', ...defaultTheme.fontFamily.sans],
 			medium: ['font-medium', ...defaultTheme.fontFamily.sans],
@@ -64,6 +80,7 @@ module.exports = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
+		
   	}
   },
   plugins: [require("tailwindcss-animate")],

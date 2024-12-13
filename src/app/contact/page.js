@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { supabase } from '../../utils/supabaseClient';
 import Image from 'next/image';
+import BackToTopButton from '../components/BackToTopButton';
 
 const Page = () => {
   const [message, setMessage] = useState('');
@@ -145,6 +146,9 @@ const Page = () => {
               </p>
             )}
           </section>
+
+          <BackToTopButton />
+
         </div>
       </div>
 
