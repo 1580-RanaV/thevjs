@@ -5,7 +5,7 @@ const Future = () => {
     <div>
         <section>
           <div className='mt-16 md:mt-16'>
-            <span className='font-semibold text-5xl md:text-5xl uppercase'>idea. future. direction.</span>
+            <span className='font-semibold text-5xl md:text-5xl uppercase'>idea. <span className='text-green-400'>future.</span> direction.</span>
             <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
               As I continue to evolve in the field of architecture, my future goals are centered around expanding my expertise in creating innovative, sustainable, and functional spaces. I aim to work on projects that challenge traditional design norms and push the boundaries of what is possible, while staying true to the core principles of architecture. My focus will remain on designing spaces that are not only visually striking but also adaptable, efficient, and responsive to the needs of their users and the environment.
               <br></br><br></br>

@@ -9,6 +9,8 @@ import WorkImpact from './components/WorkImpact';
 import Journey from './components/Journey';
 import Future from './components/Future';
 import Cta from './components/Cta';
+import AdidasList from './components/CitiesList';
+import ClientList from './components/ClientList';
 
 const Page = () => {
   return (
@@ -23,7 +25,11 @@ const Page = () => {
 
         <Creative />
 
+        <AdidasList />
+
         <WorkImpact />
+
+        <ClientList />
 
         <Journey />
 

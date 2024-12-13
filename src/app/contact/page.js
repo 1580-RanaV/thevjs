@@ -97,11 +97,11 @@ const Page = () => {
             <div className="mt-12 text-neutral-600 text-center">
           <p className="text-sm sm:text-base">
             Head to{' '}
-            <Link href="/work" className="font-semibold underline">
+            <Link href="/work" className="font-semibold underline text-green-800">
               work
             </Link>{' '}
             to view all my works, or go back to{' '}
-            <Link href="/" className="font-semibold underline">
+            <Link href="/" className="font-semibold underline text-green-800">
               home.
             </Link>{' '}
           </p>

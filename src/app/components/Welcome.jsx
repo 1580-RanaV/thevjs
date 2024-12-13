@@ -39,7 +39,7 @@ const Welcome = () => {
         </div>
       </div>
       <p className="font-regular mt-12 text-justify text-lg leading-relaxed">
-        Hey! I am V Jaya Surya, a Retail Design Manager specializing
+        Hey! I am V Jaya Surya, an architect, also a Retail Design Manager specializing
         in concept development, blending architecture, interior design,
         and visualization to craft inspiring retail spaces.
         With expertise in retail design, landscape, and immersive
@@ -51,7 +51,7 @@ const Welcome = () => {
       <div className="mt-20 flex justify-between">
         <div>
           <span className="font-semibold block">PROJECTS</span>
-          <span className="font-bold text-5xl">
+          <span className="font-bold text-5xl text-green-400">
             <NumberFlow 
               value={projectCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
@@ -62,7 +62,7 @@ const Welcome = () => {
         </div>
         <div>
           <span className="font-semibold block">AREA IN SQ.FT</span>
-          <span className="font-bold text-5xl">
+          <span className="font-bold text-5xl text-green-400">
             <NumberFlow 
               value={areaCount} 
               format={{ maximumFractionDigits: 1 }}
@@ -71,11 +71,11 @@ const Welcome = () => {
               opacityTiming={{ duration: 1000, easing: 'ease-in-out' }}
             />
           </span>
-          <span className="font-semibold text-5xl">M</span>
+          <span className="font-semibold text-5xl text-green-400">M</span>
         </div>
         <div>
           <span className="font-semibold block">COUNTRIES</span>
-          <span className="font-bold text-5xl">
+          <span className="font-bold text-5xl text-green-400">
             <NumberFlow 
               value={countriesCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
@@ -83,7 +83,7 @@ const Welcome = () => {
               opacityTiming={{ duration: 2000, easing: 'ease-in-out' }}
             />
           </span>
-          <span className="font-semibold text-5xl">+</span>
+          <span className="font-semibold text-5xl text-green-400">+</span>
         </div>
       </div>
     </section>
