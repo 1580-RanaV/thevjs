@@ -112,7 +112,7 @@ const Freelance = () => {
           </h1>
           <span 
           onClick={() => toggleWork(index)}
-          className="mb-3 text-sm font-semibold uppercase text-neutral-500 cursor-pointer py-4 hover:text-neutral-500 transition-colors">
+          className="text-right mb-3 text-sm font-semibold uppercase text-neutral-500 cursor-pointer py-4 hover:text-neutral-500 transition-colors">
             {work.place}
           </span>
           </div>
