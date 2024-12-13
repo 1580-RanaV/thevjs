@@ -7,6 +7,7 @@ const Freelance = () => {
   const workDetails = [
     {
       title: 'MR.JAYARAJU DUPLEX',
+      place:'hyderabad, India',
       description: 'This duplex proposal in Hyderabad, designed for a family of 4-6 members, includes a formal living room, kitchen, dining area, three bedrooms, and a family living area. A cozy family sit-out lawn with landscaping and a distinctive striped elevation feature create a warm, inviting environment that fosters family togetherness while balancing functionality and aesthetics.',
       images: [
         '/buildnext/img1.jpg',
@@ -18,6 +19,7 @@ const Freelance = () => {
     },
     {
       title: 'dr. prakash villa',
+      place:'hyderabad, India',
       description: 'This large-scale proposal in Hyderabad, designed for a family of 7-8 members, includes a formal living room, kitchen, dining area, five bedrooms, a family living area, and a gym. A key feature is the exterior family deck with landscaped stairs leading to the main entrance. The design also addresses the challenge of raising the plinth level to 7-9 feet, requiring careful planning and execution.',
       images: [
         '/buildnext/img6.jpg',
@@ -29,6 +31,7 @@ const Freelance = () => {
     },
     {
       title: 'MR.suman villa',
+      place:'hyderabad, India',
       description: 'This modern villa proposal in Hyderabad, designed for a family of 5-6 members, embraces innovative design with a dynamic play of levels. Skylights above the internal staircase enhance visual interest and natural light, reflecting the clients encouragement of creative experimentation in the design.',
       images: [
         '/buildnext/3-1.jpg',
@@ -41,6 +44,7 @@ const Freelance = () => {
     },
     {
       title: 'buildnext experience store',
+      place:'vizag, India',
       description: 'I designed the office and experience store for Buildnext in Vizag, aligning with the companys goal to expand into central India. The design features a simple, crisp office space that blends functionality with aesthetics, creating an inviting atmosphere that seamlessly integrates the professional environment with a customer-centric experience.',
       images: [
         '/buildnext/4-1.jpg',
@@ -52,6 +56,7 @@ const Freelance = () => {
     },
     {
       title: 'mr. srikanth villa',
+      place:'vizag, India',
       description: 'The client requested a residence with three bedrooms, a simple kitchen, and separate living and dining areas. The challenge was the small trapezoidal plot, requiring innovative design solutions to efficiently configure the spaces while incorporating small yet impactful design features.',
       images: [
         '/buildnext/5-1.jpg',
@@ -62,6 +67,7 @@ const Freelance = () => {
     },
     {
       title: 'mr. faiz commercial',
+      place:'hyderabad, India',
       description: 'The commercial building is designed to house a co-working space for small and medium-sized offices, featuring the latest support technology and services to enhance the working environment and provide efficiency for its users.',
       images: [
         '/buildnext/6-1.jpg',
@@ -73,6 +79,7 @@ const Freelance = () => {
     },
     {
       title: 'mr. raja villa',
+      place:'hyderabad, India',
       description: 'The modern villa design emphasizes openness and a strong connection to nature, starting with the living areas on the first floor and extending vertically. It blends raw, modern Indian materials with Western influences, creating a unique and cohesive aesthetic.',
       images: [
         '/buildnext/7-2.jpg',
@@ -91,14 +98,24 @@ const Freelance = () => {
   return (
     <div className="space-y-4">
       {workDetails.map((work, index) => (
-        <div key={index} className="border-b border-neutral-800">
+        <div
+        onClick={() => toggleWork(index)}
+        key={index}
+        className="border-b border-neutral-800 hover:cursor-pointer">
           {/* Project Title */}
+          <div className='flex justify-between'>
           <h1
             onClick={() => toggleWork(index)}
             className="font-semibold uppercase cursor-pointer py-4 hover:text-neutral-500 transition-colors"
           >
             {work.title}
           </h1>
+          <span 
+          onClick={() => toggleWork(index)}
+          className="mb-3 font-semibold uppercase text-neutral-500 cursor-pointer py-4 hover:text-neutral-500 transition-colors">
+            {work.place}
+          </span>
+          </div>
 
           {/* Project Details */}
           {openWork === index && (
