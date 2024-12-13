@@ -187,14 +187,14 @@ const Freelance = () => {
           </h1>
           <span 
           onClick={() => toggleWork(index)}
-          className="text-right mb-3 text-sm font-semibold uppercase text-neutral-500 cursor-pointer hover:text-neutral-500 transition-colors">
+          className="block text-sm font-semibold uppercase text-neutral-500 cursor-pointer hover:text-neutral-500 transition-colors">
             {work.place}
           </span>
           </div>
 
           {/* Project Details */}
           {openWork === index && (
-            <div className="pb-8 transition-all duration-300 ease-in-out">
+            <div className="pb-6 pt-6 transition-all duration-300 ease-in-out">
               {/* Project Description */}
               <p className="text-neutral-200 text-justify font-regular mb-6">{work.description}</p>
 
