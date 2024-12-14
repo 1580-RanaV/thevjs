@@ -4,7 +4,7 @@ const Creative = () => {
   return (
     <section className="mt-16">
                 <h2 className="font-semibold text-5xl md:text-5xl uppercase">
-                  Innovate. <span className='text-green-400'>Push Creative Boundaries</span>. Everyday.
+                  Innovate. <span className='text-green-400'>Push Creative Boundaries.</span> Everyday.
                 </h2>
                 <p className='text-lg font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
                     Fueled by an unrelenting passion for architecture and design, I embrace every project as an opportunity to innovate and redefine possibilities. With a thirst for knowledge and a commitment to growth, I approach my work with zeal, continually honing my skills and challenging creative limits to leave a meaningful impact.
