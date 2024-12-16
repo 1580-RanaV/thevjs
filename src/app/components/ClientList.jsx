@@ -27,7 +27,7 @@ const RotatingNameDisplay = () => {
     "Al Firas",
     "Al Futtaim Electric Motors",
     "Jawhara Jewellers",
-    "Ladybird Nursery",
+    "",
     "Yalla Begums",
     "BITS Lobby",
     "Taste of India",
