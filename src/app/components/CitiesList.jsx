@@ -95,7 +95,7 @@ const RotatingNameDisplay = () => {
 
   return (
     <section>
-        <span className='block mt-12 font-medium text-center uppercase'>places touched down</span>
+        <span className='block mt-12 font-medium text-center'>Places touched down</span>
         <div 
       ref={containerRef} 
       className="flex justify-center items-center h-32 w-full mt-5"
