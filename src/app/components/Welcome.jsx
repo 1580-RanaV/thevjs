@@ -38,7 +38,7 @@ const Welcome = () => {
           />
         </div>
       </div>
-      <p className="font-regular mt-12 text-justify text-lg leading-relaxed">
+      <p className="font-regular mt-12 text-justify leading-relaxed">
         Hey! I am V Jaya Surya, an architect, also a Retail Design Manager specializing
         in concept development, blending architecture, interior design,
         and visualization to craft inspiring retail spaces.
