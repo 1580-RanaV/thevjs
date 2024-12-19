@@ -49,7 +49,7 @@ const Page = () => {
           <Navbar />
           <section className="mt-12">
             <h1 className="font-semibold text-5xl uppercase">get in touch with me</h1>
-            <p className="text-lg font-regular mt-12 text-justify leading-relaxed">
+            <p className="font-regular mt-12 text-justify leading-relaxed">
               Feel free to reach out during business hours for general inquiries. For urgent or important matters, I&apos;m available at any time via the listed channels. If I&apos;m unavailable, you can always leave a message below—I&apos;ll respond as soon as I can.
             </p>
 
@@ -107,7 +107,7 @@ const Page = () => {
           </p>
         </div>
 
-            <p className="font-regular text-lg mt-24">Leave a message here</p>
+            <p className="font-regular mt-24">Leave a message here</p>
 
             <div className="flex py-6 items-center">
               <input
