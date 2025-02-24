@@ -60,7 +60,7 @@ const Page = () => {
                 rel="noopener noreferrer"
                 className="hover:opacity-50 transition-opacity duration-300"
               >
-                <Image src="/mail.svg" alt="Email" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+                <Image src="/mail.svg" alt="Email" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-full" />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/viyyapujayasurya/"

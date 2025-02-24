@@ -21,8 +21,8 @@ const Welcome = () => {
 
         <div className="flex flex-col space-y-3">
           <h1 className="font-semibold text-4xl uppercase">V Jaya Surya</h1>
-          <span className="text-neutral-200 font-regular text-sm">Senior Retail Design Manager</span>
-          <span className="text-neutral-200 font-regular text-sm">(switch loading...)</span>
+          <span className="text-neutral-200 font-regular text-sm">Senior Retail Designer</span>
+          <span className="text-neutral-200 font-regular text-sm">Al Tayer Insignia</span>
           <p className="text-neutral-200 font-regular text-sm">
             Dubai, UAE
           </p>
@@ -55,7 +55,7 @@ const Welcome = () => {
             <NumberFlow 
               value={projectCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
-              spinTiming={{ duration: 4500 }}
+              spinTiming={{ duration: 5500 }}
               opacityTiming={{ duration: 2000, easing: 'ease-in-out' }}
             />
           </span>
@@ -67,7 +67,7 @@ const Welcome = () => {
               value={areaCount} 
               format={{ maximumFractionDigits: 1 }}
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
-              spinTiming={{ duration: 5500 }}
+              spinTiming={{ duration: 6500 }}
               opacityTiming={{ duration: 1000, easing: 'ease-in-out' }}
             />
           </span>
@@ -79,7 +79,7 @@ const Welcome = () => {
             <NumberFlow 
               value={countriesCount} 
               transformTiming={{ duration: 1000, easing: 'ease-out' }}
-              spinTiming={{ duration: 4500 }}
+              spinTiming={{ duration: 6000 }}
               opacityTiming={{ duration: 2000, easing: 'ease-in-out' }}
             />
           </span>
