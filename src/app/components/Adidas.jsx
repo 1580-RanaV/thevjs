@@ -172,7 +172,7 @@ const Adidas = () => {
               <p className="text-neutral-200 text-justify font-regular mb-6">{work.description}</p>
 
               {/* Project Images */}
-              <div className="space-y-4">
+              {/* <div className="space-y-4">
                 {work.images.map((image, imgIndex) => (
                   <div
                     key={imgIndex}
@@ -188,7 +188,8 @@ const Adidas = () => {
                     />
                   </div>
                 ))}
-              </div>
+              </div> */}
+
             </div>
           )}
         </div>
