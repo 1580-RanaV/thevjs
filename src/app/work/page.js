@@ -40,7 +40,7 @@ function DisclaimerModal({ isOpen, onClose }) {
           >
             Heads up — Image Rights
           </h2>
-          <p className="text-neutral-200 text-center font-normal mb-6">
+          <p className="text-neutral-200 text-center font-regular mb-6">
             Some renders/images may be hidden or removed due to copyright
             considerations. None of the images are owned by me; all rights and
             ownership belong to their respective creators/brands. This page is
