@@ -38,10 +38,10 @@ const Adidas = () => {
     images: [
         '/adidas/canalwalk/ct-1.jpg',
         '/adidas/canalwalk/ct-2.jpeg',
-        '/adidas/canalwalk/ct-3.jpg',
+        '/adidas/canalwalk/ct-3.jpeg',
         '/adidas/canalwalk/ct-4.jpg',
         '/adidas/canalwalk/ct-5.jpg',
-        '/adidas/canalwalk/ct-6.jpg',
+        '/adidas/canalwalk/ct-6.jpeg',
     ],
     },
 
