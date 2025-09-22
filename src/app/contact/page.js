@@ -8,6 +8,18 @@ import { supabase } from '../../utils/supabaseClient';
 import Image from 'next/image';
 import BackToTopButton from '../components/BackToTopButton';
 
+const ExternalArrow = () => (
+  <svg
+    aria-hidden="true"
+    className="w-4 h-4 opacity-70 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+    viewBox="0 0 24 24"
+    fill="none"
+  >
+    <path d="M7 17L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <path d="M9 7h8v8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+  </svg>
+);
+
 const Page = () => {
   const [message, setMessage] = useState('');
   const [email, setEmail] = useState('');
@@ -31,7 +43,7 @@ const Page = () => {
     ]);
 
     if (error) {
-      setFeedback('Couldn&apos;t get it, can you please try later? :(');
+      setFeedback("Couldn't get it, can you please try later? :(");
       console.error(error);
     } else {
       setFeedback('Got your message! Expect a response soon. :)');
@@ -47,81 +59,117 @@ const Page = () => {
       <div className="bg-neutral-950 text-white min-h-screen flex justify-center px-5 py-5">
         <div className="max-w-3xl w-full">
           <Navbar />
+
           <section className="mt-12">
             <h1 className="font-semibold text-5xl uppercase">get in touch with me</h1>
-            <p className="font-regular mt-12 text-justify leading-relaxed">
-              Feel free to reach out during business hours for general inquiries. For urgent or important matters, I&apos;m available at any time via the listed channels. If I&apos;m unavailable, you can always leave a message below—I&apos;ll respond as soon as I can.
+
+            {/* Casual + professional copy */}
+            <p className="font-regular mt-12 text-justify leading-relaxed text-neutral-200">
+              I’m around during business hours for most queries, and I’m quick on urgent notes too.
+              If I miss you, drop a message below and I’ll circle back as soon as I can. For work
+              samples, collabs, or a quick hello—pick a link that suits you.
             </p>
 
-            <div className="flex flex-wrap justify-between gap-2 mt-12">
+            {/* Compact link row with small logos + arrow */}
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {/* Email */}
               <Link
                 href="mailto:jayasurya2223@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-50 transition-opacity duration-300"
+                className="group flex items-center justify-between rounded-lg border border-neutral-800/60 bg-neutral-900/40 px-4 py-3 hover:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-700"
+                aria-label="Email Jayasurya"
               >
-                <Image src="/mail.svg" alt="Email" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-full" />
+                <span className="flex items-center gap-3">
+                  <Image
+                    src="/mail.svg"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 object-contain"
+                    priority
+                  />
+                  <span className="font-medium">Email</span>
+                </span>
+                <ExternalArrow />
               </Link>
+
+              {/* LinkedIn */}
               <Link
                 href="https://www.linkedin.com/in/viyyapujayasurya/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-50 transition-opacity duration-300"
+                className="group flex items-center justify-between rounded-lg border border-neutral-800/60 bg-neutral-900/40 px-4 py-3 hover:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-700"
+                aria-label="Open LinkedIn profile"
               >
-                <Image src="/linkedin.svg" alt="LinkedIn" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+                <span className="flex items-center gap-3">
+                  <Image
+                    src="/linkedin.svg"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 object-contain"
+                  />
+                  <span className="font-medium">LinkedIn</span>
+                </span>
+                <ExternalArrow />
               </Link>
+
+              {/* Instagram (dotted underline on label) */}
               <Link
                 href="https://www.instagram.com/jaya_surya_js/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-50 transition-opacity duration-300"
+                className="group flex items-center justify-between rounded-lg border border-neutral-800/60 bg-neutral-900/40 px-4 py-3 hover:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-700"
+                aria-label="Open Instagram profile"
               >
-                <Image src="/insta.svg" alt="Instagram" width={400} height={400} className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm" />
+                <span className="flex items-center gap-3">
+                  <Image
+                    src="/insta.svg"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 object-contain"
+                  />
+                  <span className="font-medium underline decoration-dotted underline-offset-4">
+                    Instagram
+                  </span>
+                </span>
+                <ExternalArrow />
               </Link>
-              {/* <Link
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-50 transition-opacity duration-300"
-              >
-                <Image
-                  src="/x.svg"
-                  alt="X (Twitter)"
-                  width={400}
-                  height={400}
-                  className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover rounded-sm"
-                />
-              </Link> */}
             </div>
 
-            <div className="mt-12 text-neutral-600 text-center">
-          <p className="text-sm sm:text-base">
-            Head to{' '}
-            <Link href="/work" className="font-semibold underline text-green-800">
-              work
-            </Link>{' '}
-            to view all my works, or go back to{' '}
-            <Link href="/" className="font-semibold underline text-green-800">
-              home.
-            </Link>{' '}
-          </p>
-        </div>
+            {/* Small helper nav */}
+            <div className="mt-12 text-neutral-500 text-center">
+              <p className="text-sm sm:text-base">
+                Head to{' '}
+                <Link href="/work" className="font-semibold underline text-green-500">
+                  work
+                </Link>{' '}
+                to view all my works, or go back to{' '}
+                <Link href="/" className="font-semibold underline text-green-500">
+                  home
+                </Link>
+                .
+              </p>
+            </div>
 
-            <p className="font-regular mt-24">Leave a message here</p>
+            {/* Form */}
+            <p className="font-regular mt-16">Leave a message here</p>
 
             <div className="flex py-6 items-center">
               <input
-                className="font-regular px-4 py-3 w-full rounded-lg bg-neutral-800 text-white"
+                className="font-regular px-4 py-3 w-full rounded-lg bg-neutral-800 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-700"
                 type="text"
-                placeholder="What&apos;s up?"
+                placeholder="What’s up?"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
 
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-3">
               <input
-                className="font-regular px-4 py-3 w-full rounded-lg bg-neutral-800 text-white"
+                className="font-regular px-4 py-3 w-full rounded-lg bg-neutral-800 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-700"
                 type="email"
                 placeholder="Email address"
                 value={email}
@@ -132,7 +180,7 @@ const Page = () => {
                   isSubmitting
                     ? 'bg-gray-400'
                     : 'bg-white hover:text-green-400 hover:bg-neutral-800'
-                } transition-colors duration-300`}
+                } transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-700`}
                 onClick={handleSubmit}
                 disabled={isSubmitting}
               >
@@ -141,14 +189,13 @@ const Page = () => {
             </div>
 
             {feedback && (
-              <p className="text-center text-neutral-600 font-regular mt-4">
+              <p className="text-center text-neutral-500 font-regular mt-4">
                 {feedback}
               </p>
             )}
           </section>
 
           <BackToTopButton />
-
         </div>
       </div>
 

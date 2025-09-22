@@ -75,7 +75,7 @@ const RotatingNameDisplay = () => {
       setCurrentIndex((prevIndex) => 
         (prevIndex + 1) % names.length
       );
-    }, 1500);
+    }, 1200);
 
     // Cleanup interval on component unmount
     return () => clearInterval(interval);

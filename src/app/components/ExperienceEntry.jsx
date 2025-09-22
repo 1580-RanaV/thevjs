@@ -6,7 +6,7 @@ const ExperienceEntry = ({ company, location, position }) => {
       <span className="font-semibold">{company}</span>{' '}
       <span className="font-regular text-lg">|</span>{' '}
       <span className="font-regular">{location}</span>
-      <span className="block text-neutral-400">
+      <span className="font-regular block text-neutral-400">
         {position}
       </span>
     </div>

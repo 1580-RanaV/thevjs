@@ -29,7 +29,7 @@ function DisclaimerModal({ isOpen, onClose }) {
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
     >
       <div
-        className="absolute inset-0 bg-black/60 backdrop-blur-lg"
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={onClose}
       />
       <div className="relative z-10 w-full max-w-md rounded-2xl border border-neutral-800 bg-neutral-950 shadow-xl">
@@ -41,10 +41,10 @@ function DisclaimerModal({ isOpen, onClose }) {
             Heads up — Image Rights
           </h2>
           <p className="text-neutral-200 text-center font-regular mb-6">
-            Some renders/images may be hidden or removed due to copyright
-            considerations. None of the images are owned by me; all rights and
-            ownership belong to their respective creators/brands. This page is
-            for portfolio/showcase purposes only.
+            The images used here are not owned by me; all rights belong to their respective owners. 
+            If any images are missing, they will be replaced with suitable alternatives. 
+            In case of any copyrighted content, please note that it will be removed or replaced soon. 
+            This page is intended purely for portfolio and showcase purposes.
           </p>
           <div className="mt-5 text-center flex justify-center">
             <button

@@ -11,6 +11,7 @@ import Future from './components/Future';
 import Cta from './components/Cta';
 import AdidasList from './components/CitiesList';
 import ClientList from './components/ClientList';
+import Featured from './components/Featured';
 
 const Page = () => {
   return (
@@ -26,6 +27,8 @@ const Page = () => {
         <Creative />
 
         <AdidasList />
+
+        <Featured />
 
         <WorkImpact />
 
