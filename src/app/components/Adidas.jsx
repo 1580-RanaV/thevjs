@@ -10,11 +10,14 @@ const Adidas = () => {
       place:'dezingoff, israel',
       description: 'For the Adidas Halo flagship store in Israel, I designed the first flagship location in the country, featuring an expansive floor plate to accommodate diverse store segments. A key aspect of the design was the creation of distinct, engaging zones, including dedicated areas for womens apparel, football gear, Originals, and more. I placed significant emphasis on the spatial aesthetics and functionality of these zones to enhance the stores overall atmosphere. The façades dynamic curvature plays a pivotal role, as it presents a striking and continuous view of the store from the road, effectively drawing attention and showcasing the brands identity.',
       images: [
-        '/adidas/dezingoff/pic (1).jpeg',
-        '/adidas/dezingoff/pic (4).jpeg',
-        '/adidas/dezingoff/pic (5).jpeg',
+        '/adidas/dezingoff/d-1.jpg',
+        '/adidas/dezingoff/d-2.jpg',
+        '/adidas/dezingoff/d-3.jpg',
+        '/adidas/dezingoff/d-4.jpg',
+        '/adidas/dezingoff/d-5.jpg',
+        '/adidas/dezingoff/d-6.jpg',
+        '/adidas/dezingoff/d-7.jpg',
         '/adidas/dezingoff/pic (11).png',
-        '/adidas/dezingoff/pic (22).png',
       ],
     },
 
@@ -171,7 +174,7 @@ const Adidas = () => {
               <p className="text-neutral-200 text-justify font-regular mb-6">{work.description}</p>
 
               {/* Project Images */}
-              {/* <div className="space-y-4">
+              { <div className="space-y-4">
                 {work.images.map((image, imgIndex) => (
                   <div
                     key={imgIndex}
@@ -187,7 +190,7 @@ const Adidas = () => {
                     />
                   </div>
                 ))}
-              </div> */}
+              </div> }
 
             </div>
           )}
