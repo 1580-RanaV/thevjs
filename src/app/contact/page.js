@@ -131,7 +131,7 @@ const Page = () => {
                     height={24}
                     className="w-6 h-6 object-contain"
                   />
-                  <span className="font-medium underline decoration-dotted underline-offset-4">
+                  <span className="font-medium">
                     Instagram
                   </span>
                 </span>

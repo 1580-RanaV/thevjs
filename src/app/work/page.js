@@ -79,7 +79,7 @@ export default function Page() {
         <div className="max-w-3xl w-full">
           <Navbar />
 
-          <section className="mt-12 font-normal text-neutral-400 text-sm sm:text-base">
+          <section className="mt-12 font-regular text-neutral-400 text-sm sm:text-base">
             This is obviously not the entire list of my works. These are a few
             of the handpicked projects to showcase my work. Please tap to reveal
             the images and the description of the project.
@@ -87,7 +87,7 @@ export default function Page() {
 
           <section className="mt-12">
             <h1 className="font-semibold text-5xl uppercase mb-10">
-              adidas: handpicked
+              <span className="lowercase">adidas</span>: handpicked
             </h1>
             <Adidas />
           </section>
