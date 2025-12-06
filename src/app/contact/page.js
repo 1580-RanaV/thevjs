@@ -41,7 +41,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="mt-10 grid grid-cols-1 gap-4">
               <Link
                 href="mailto:jayasurya2223@gmail.com"
                 target="_blank"
