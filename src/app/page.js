@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import Footer from './components/Footer';
-import BackToTopButton from './components/BackToTopButton';
 import Creative from './components/Creative';
 import WorkImpact from './components/WorkImpact';
 import Journey from './components/Journey';
@@ -15,7 +14,7 @@ import Featured from './components/Featured';
 
 const Page = () => {
   return (
-    <div className="bg-neutral-950 text-white min-h-screen flex flex-col px-5 py-5">
+    <div className="text-white min-h-screen flex flex-col px-5 py-5">
       <Navbar />
       <main className="flex-grow px-3 sm:px-5 py-5 flex justify-center">
         <div className="container mx-auto max-w-3xl">
@@ -39,8 +38,6 @@ const Page = () => {
         <Cta />
 
         <Future />
-
-        <BackToTopButton />
 
         </div>
         

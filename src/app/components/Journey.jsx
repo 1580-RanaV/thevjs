@@ -4,12 +4,13 @@ import ExperienceEntry from './ExperienceEntry'
 const Journey = () => {
   return (
     <div>
-        <section className="mt-16">
-            <h2 className="font-semibold text-5xl md:text-5xl uppercase">
-              learn. <span className='text-green-400'>evolve.</span> Journey.
+        <section className="mt-16 corner-plus">
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
+              Learn, <span className="heading-em">evolve</span>, repeat.
             </h2>
-            <p className='font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
-            With extensive experience spanning various sectors including architecture, urban planning, interiors, and retail design, I have worked on over 350 projects, delivering innovative and impactful solutions. My expertise includes managing diverse teams, developing design concepts, and executing customer-centric spaces that enhance brand identity. Throughout my career, I have taken on key roles in design coordination and project management, ensuring seamless collaboration across disciplines and contributing to the successful realization of both small and large-scale projects.
+            <p className='mt-4 text-neutral-200 leading-relaxed'>
+              350+ projects across architecture, urban planning, interiors, and retail. I lead with clarity,
+              guide teams, and keep brands centered as spaces move from sketch to site.
             </p>
             <ExperienceEntry
               company="Al Tayer Insignia L.L.C"

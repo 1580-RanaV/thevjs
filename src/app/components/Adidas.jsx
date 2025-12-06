@@ -135,22 +135,26 @@ const Adidas = () => {
     setOpenWork(openWork === index ? null : index);
   };
 
-  // helper for adidas lowercase + rest uppercase
-  const formatText = (text) => {
-    const match = text.match(/adidas/i);
-    if (match) {
-      return (
-        <>
-          <span className="lowercase">adidas</span>{" "}
-          <span className="uppercase">{text.replace(/adidas/i, "").trim()}</span>
-        </>
-      );
-    }
-    return <span className="uppercase">{text}</span>;
-  };
+  const toTitleCase = (text) =>
+    text
+      .split(" ")
+      .map((word) =>
+        word
+          .split(".")
+          .map((part) => {
+            const lower = part.toLowerCase();
+            if (!part) return "";
+            if (lower === "adidas") return "adidas";
+            return lower.charAt(0).toUpperCase() + lower.slice(1);
+          })
+          .join(". ")
+      )
+      .join(" ")
+      .replace(/\s+/g, " ")
+      .trim();
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 corner-plus">
       {workDetails.map((work, index) => (
         <div
           onClick={() => toggleWork(index)}
@@ -163,13 +167,13 @@ const Adidas = () => {
               onClick={() => toggleWork(index)}
               className="font-semibold cursor-pointer py-1 hover:text-neutral-500 transition-colors"
             >
-              {formatText(work.title)}
+              {toTitleCase(work.title)}
             </h1>
             <span
               onClick={() => toggleWork(index)}
               className="block text-sm font-semibold text-neutral-500 cursor-pointer hover:text-neutral-500 transition-colors"
             >
-              {formatText(work.place)}
+              {toTitleCase(work.place)}
             </span>
           </div>
 

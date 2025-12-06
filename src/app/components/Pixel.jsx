@@ -170,8 +170,26 @@ const Freelance = () => {
     setOpenWork(openWork === index ? null : index);
   };
 
+  const toTitleCase = (text) =>
+    text
+      .split(" ")
+      .map((word) =>
+        word
+          .split(".")
+          .map((part) => {
+            const lower = part.toLowerCase();
+            if (!part) return "";
+            if (lower === "adidas") return "adidas";
+            return lower.charAt(0).toUpperCase() + lower.slice(1);
+          })
+          .join(". ")
+      )
+      .join(" ")
+      .replace(/\s+/g, " ")
+      .trim();
+
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 corner-plus">
       {workDetails.map((work, index) => (
         <div
         onClick={() => toggleWork(index)}
@@ -181,14 +199,14 @@ const Freelance = () => {
           <div className=''>
           <h1
             onClick={() => toggleWork(index)}
-            className="font-semibold uppercase cursor-pointer py-1 hover:text-neutral-500 transition-colors"
+            className="font-semibold cursor-pointer py-1 hover:text-neutral-500 transition-colors"
           >
-            {work.title}
+            {toTitleCase(work.title)}
           </h1>
           <span 
           onClick={() => toggleWork(index)}
-          className="block text-sm font-semibold uppercase text-neutral-500 cursor-pointer hover:text-neutral-500 transition-colors">
-            {work.place}
+          className="block text-sm font-semibold text-neutral-500 cursor-pointer hover:text-neutral-500 transition-colors">
+            {toTitleCase(work.place)}
           </span>
           </div>
 
@@ -207,11 +225,11 @@ const Freelance = () => {
                   >
                     <Image
                       src={image}
-                      layout="responsive" 
                       width={100} 
                       height={900}
+                      sizes="100vw"
                       alt={`${work.title} - Image ${imgIndex + 1}`}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
                 ))}

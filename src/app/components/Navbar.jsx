@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -12,32 +13,45 @@ const Navbar = () => {
 
   return (
     <section>
-      <div className="w-full bg-neutral-950 text-white">
-        <nav className="max-w-3xl mx-auto flex items-center justify-center gap-12 py-16 w-full">
-          <Link 
-            href="/" 
-            className={`font-semibold hover:text-green-400 transition-colors duration-300 ${
-              isActive('/') ? 'text-green-400' : ''
-            }`}
-          >
-            HOME
+      <div className="w-full text-white">
+        <nav className="max-w-3xl mx-auto flex items-center justify-between gap-8 py-10 w-full border-b border-neutral-800/60">
+          <Link href="/" className="shrink-0">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={48}
+              height={48}
+              className="object-contain"
+              priority
+            />
           </Link>
-          <Link 
-            href="/work" 
-            className={`font-semibold hover:text-green-400 transition-colors duration-300 ${
-              isActive('/work') ? 'text-green-400' : ''
-            }`}
-          >
-            WORK
-          </Link>
-          <Link 
-            href="/contact" 
-            className={`font-semibold hover:text-green-400 transition-colors duration-300 ${
-              isActive('/contact') ? 'text-green-400' : ''
-            }`}
-          >
-            CONTACT
-          </Link>
+
+          <div className="flex items-center justify-center gap-10 text-sm tracking-tight">
+            <Link 
+              href="/" 
+              className={`font-medium hover:text-white transition-colors duration-300 ${
+                isActive('/') ? 'text-white' : 'text-neutral-400'
+              }`}
+            >
+              Home
+            </Link>
+            <Link 
+              href="/work" 
+              className={`font-medium hover:text-white transition-colors duration-300 ${
+                isActive('/work') ? 'text-white' : 'text-neutral-400'
+              }`}
+            >
+              Work
+            </Link>
+            <Link 
+              href="/contact" 
+              className={`font-medium hover:text-white transition-colors duration-300 ${
+                isActive('/contact') ? 'text-white' : 'text-neutral-400'
+              }`}
+            >
+              Contact
+            </Link>
+          </div>
         </nav>
       </div>
     </section>

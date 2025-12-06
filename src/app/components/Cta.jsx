@@ -4,17 +4,17 @@ import Link from 'next/link'
 const Cta = () => {
   return (
     <div>
-        <div className="mt-8 text-neutral-600 text-center">
+        <div className="mt-10 text-center text-neutral-200">
           <p className="text-sm sm:text-base">
-            Head to{' '}
-            <Link href="/work" className="font-semibold underline text-green-800">
+            See more builds on{' '}
+            <Link href="/work" className="font-semibold underline">
               work
             </Link>{' '}
-            to view all my works, or contact me at{' '}
-            <Link href="/contact" className="font-semibold underline text-green-800">
+            or reach me via{' '}
+            <Link href="/contact" className="font-semibold underline">
               contact
-            </Link>{' '}
-            for any queries or business.
+            </Link>
+            .
           </p>
         </div>
     </div>

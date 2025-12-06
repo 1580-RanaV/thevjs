@@ -28,10 +28,11 @@ module.exports = {
 			popOut: 'popOut 0.4s ease-in-out',
 		  },
 		fontFamily: {
-			regular: ['font-regular', ...defaultTheme.fontFamily.sans],
-			medium: ['font-medium', ...defaultTheme.fontFamily.sans],
-			semibold: ['font-semibold', ...defaultTheme.fontFamily.sans],
-			bold: ['font-bold', ...defaultTheme.fontFamily.sans],
+			sans: ['var(--font-general-sans)', ...defaultTheme.fontFamily.sans],
+			regular: ['var(--font-general-sans)', ...defaultTheme.fontFamily.sans],
+			medium: ['var(--font-general-sans)', ...defaultTheme.fontFamily.sans],
+			semibold: ['var(--font-general-sans)', ...defaultTheme.fontFamily.sans],
+			bold: ['var(--font-general-sans)', ...defaultTheme.fontFamily.sans],
 		  },
   		colors: {
   			background: 'hsl(var(--background))',

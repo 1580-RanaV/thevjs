@@ -2,20 +2,23 @@ import React from 'react'
 
 const Creative = () => {
   return (
-    <section className="mt-16">
-                <h2 className="font-semibold text-5xl md:text-5xl uppercase">
-                  Innovate. <span className='text-green-400'>Push Creative Boundaries.</span> Everyday.
-                </h2>
-                <p className='font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
-                    Fueled by an unrelenting passion for architecture and design, I embrace every project as an opportunity to innovate and redefine possibilities. With a thirst for knowledge and a commitment to growth, I approach my work with zeal, continually honing my skills and challenging creative limits to leave a meaningful impact.
-                </p>
-                <p className='font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
-                    As an architect based in Dubai with over 3 years of regional experience, I specialize in transforming concepts into compelling visual narratives, utilizing advanced design tools like SketchUp, D5, AutoCAD, Lumion, Enscape, VRay, and Revit. With a strong focus on the retail sector, I have successfully overseen more than 300 global projects, covering architecture, interiors, F&B, landscape, planning, and office spaces.
-                </p>
-                <p className='font-regular mt-4 md:mt-6 text-justify leading-relaxed'>
-                    My collaborations with prestigious brands such as Adidas, Aldar, Al Futtaim Group, BOSS, Cartier, HUGO, and Roberto Cavalli demonstrate my ability to deliver exceptional design solutions across various industries. Driven by an unwavering passion for innovation, I am constantly refining my skills and pushing creative boundaries, always striving to contribute to impactful and forward-thinking projects.
-                </p>
-              </section>
+    <section className="mt-16 corner-plus">
+      <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
+        I design to <span className="heading-em">listen</span> first, then push quietly forward.
+      </h2>
+      <p className='mt-5 text-neutral-200 leading-relaxed'>
+        Every brief is a conversation. I map the intention, absorb the brand pulse, and translate it into spatial clarity.
+        The goal is calm momentum—stores and environments that feel inevitable, never forced.
+      </p>
+      <p className='mt-4 text-neutral-300 leading-relaxed'>
+        Based in Dubai, I blend architectural rigor with retail instincts across 300+ projects, moving between concept strategy,
+        detailing, and visualization with tools like SketchUp, D5, and Revit.
+      </p>
+      <p className='mt-4 text-neutral-300 leading-relaxed'>
+        Collaborations span Adidas, Aldar, Al Futtaim Group, BOSS, Cartier, HUGO, Roberto Cavalli, and more—
+        each engagement tuned to nuance, materials, and the stories brands need to tell.
+      </p>
+    </section>
   )
 }
 

@@ -1,30 +1,39 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [now, setNow] = useState(null);
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  const formatted =
+    now &&
+    new Intl.DateTimeFormat(undefined, {
+      weekday: "short",
+      year: "numeric",
+      month: "short",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+    }).format(now);
+
   return (
-    <footer className="text-center py-6 text-xs md:text-sm text-neutral-500 border-neutral-800 font-regular">
-      <p>
-        © {new Date().getFullYear()} V Jaya Surya ·{" "}
-        <a
-          href="https://www.jayasurya.site"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-neutral-300 transition-colors underline underline-offset-4"
-        >
-          www.jayasurya.site
-        </a>
-      </p>
-      <p className="mt-1">
-        Designed & built by <span className="underline underline-offset-4">
-          <a
-          href="https://www.linkedin.com/in/vrana11/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-neutral-300 transition-colors underline underline-offset-4"
-        >
-          Rana
-        </a></span>
-      </p>
+    <footer className="mt-16 py-10 px-4 text-neutral-300 text-sm">
+      <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
+        <span className="text-white font-semibold tracking-tight">V Jaya Surya</span>
+        <span className="text-center text-neutral-400">
+          {formatted || "--"}
+        </span>
+        <span className="text-neutral-500 text-right">
+          © {new Date().getFullYear()} · Built by VRana
+        </span>
+      </div>
     </footer>
   );
 };
