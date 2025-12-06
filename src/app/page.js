@@ -14,7 +14,7 @@ import Featured from './components/Featured';
 
 const Page = () => {
   return (
-    <div className="text-white min-h-screen flex flex-col px-5 py-5">
+    <div className="text-white min-h-screen flex flex-col px-5 py-5 fade-on-load">
       <Navbar />
       <main className="flex-grow px-3 sm:px-5 py-5 flex justify-center">
         <div className="container mx-auto max-w-3xl">

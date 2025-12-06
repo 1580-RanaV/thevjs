@@ -20,7 +20,7 @@ const ExternalArrow = () => (
 
 const Page = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col fade-on-load">
       <div className="text-white flex-grow flex justify-center px-5 py-5">
         <div className="max-w-3xl w-full">
           <Navbar />

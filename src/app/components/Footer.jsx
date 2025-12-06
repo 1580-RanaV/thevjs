@@ -25,12 +25,12 @@ const Footer = () => {
 
   return (
     <footer className="mt-16 py-10 px-4 text-neutral-300 text-sm">
-      <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
+      <div className="max-w-3xl mx-auto flex flex-col items-center gap-2 text-center">
         <span className="text-white font-semibold tracking-tight">V Jaya Surya</span>
-        <span className="text-center text-neutral-400">
+        <span className="text-neutral-400">
           {formatted || "--"}
         </span>
-        <span className="text-neutral-500 text-right">
+        <span className="text-neutral-500">
           © {new Date().getFullYear()} · Built by VRana
         </span>
       </div>

@@ -4,17 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-::selection {
-  background-color: white; /* White background for selected text */
-  color: black; /* Black text color */
-}
-
 body, html {
   font-family: 'Onest', system-ui, -apple-system, "Segoe UI", sans-serif;
   color: #f5f5f5;
   min-height: 100%;
-  /* Original gradient + noise background preserved below for easy revert:
   background-color: #050505;
   background-image:
     radial-gradient(circle at 20% 20%, #181818, #0b0b0b 45%),
@@ -23,8 +16,6 @@ body, html {
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: 100% 100%, 100% 100%, 220px 220px;
   background-attachment: fixed;
-  */
-  background: #000 url('/grad.png') center/cover fixed no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -98,20 +89,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* For webkit browsers (e.g., Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* For all browsers (Firefox support) */
 html {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-/* Optional: Prevent unintended layout shifts */
-
-/* Decorative corner marks for sections */
 .corner-plus {
   position: relative;
 }
@@ -122,7 +108,7 @@ html {
   position: absolute;
   color: #525252;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
 }
 
