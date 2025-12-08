@@ -45,7 +45,7 @@ const Welcome = () => {
         </div>
       </div>
       <p className="mt-10 text-neutral-200 leading-relaxed">
-        I design immersive retail and architectural stories—blending spatial intuition with brand strategy.
+        I design immersive retail and architectural stories blending spatial intuition with brand strategy.
         Each project is crafted to feel human, intentional, and quietly bold.
       </p>
       

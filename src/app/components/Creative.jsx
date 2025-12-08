@@ -8,7 +8,7 @@ const Creative = () => {
       </h2>
       <p className='mt-5 text-neutral-200 leading-relaxed'>
         Every brief is a conversation. I map the intention, absorb the brand pulse, and translate it into spatial clarity.
-        The goal is calm momentum—stores and environments that feel inevitable, never forced.
+        The goal is calm momentum stores and environments that feel inevitable, never forced.
       </p>
       <p className='mt-4 text-neutral-300 leading-relaxed'>
         Based in Dubai, I blend architectural rigor with retail instincts across 300+ projects, moving between concept strategy,

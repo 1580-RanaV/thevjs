@@ -26,11 +26,11 @@ const Footer = () => {
   return (
     <footer className="mt-16 py-10 px-4 text-neutral-300 text-sm">
       <div className="max-w-3xl mx-auto flex flex-col items-center gap-2 text-center">
-        <span className="text-white font-semibold tracking-tight">V Jaya Surya</span>
-        <span className="text-neutral-400">
+        <span className="text-white/50">V Jaya Surya</span>
+        <span className="text-white/50">
           {formatted || "--"}
         </span>
-        <span className="text-neutral-500">
+        <span className="text-white/50">
           © {new Date().getFullYear()} · Built by VRana
         </span>
       </div>
