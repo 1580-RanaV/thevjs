@@ -8,7 +8,7 @@ const Future = () => {
             <span className='text-3xl sm:text-4xl font-semibold text-white tracking-tight'>
               Ideas set the pace; <span className='heading-em'>future</span> keeps me honest.
             </span>
-            <p className='mt-4 md:mt-6 text-neutral-200 leading-relaxed'>
+            <p className='mt-4 md:mt-6 text-neutral-195 leading-relaxed'>
               I want the next chapters to stretch beyond comfort projects that question habits, honor context,
               and stay adaptable. Sustainability, clarity, and human scale guide the way.
             </p>
