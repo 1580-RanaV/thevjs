@@ -25,6 +25,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+* {
+  user-select: none;
+  -webkit-user-select: none;  /* Safari */
+  -ms-user-select: none;      /* IE/Edge */
+}
+
 @layer base {
   :root {
     --background: 0 0% 4%;
