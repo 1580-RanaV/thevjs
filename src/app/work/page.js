@@ -6,6 +6,7 @@ import Freelance from "../components/Freelance";
 import Pixel from "../components/Pixel";
 import Adidas from "../components/Adidas";
 import Footer from "../components/Footer";
+import High from "../components/High";
 
 function DisclaimerModal({ isOpen, onClose }) {
   useEffect(() => {
@@ -77,6 +78,14 @@ export default function Page() {
             <section className="mt-12 font-regular text-neutral-400 text-sm sm:text-base">
               This is not the full archive—just a few handpicked projects. Tap to reveal images and notes.
             </section>
+
+            <section className="mt-12">
+              <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-8">
+                High end <span className="heading-em">retail</span>
+              </h1>
+              <High />
+            </section>
+
 
             <section className="mt-12">
               <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-8">
