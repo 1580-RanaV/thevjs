@@ -94,7 +94,7 @@ const Pixel = () => {
     },
 
     {
-      title: 'Jeep Showroom',
+      title: 'JEEP Showroom',
       place: 'Dubai, UAE',
       description:
         'A rugged, nature-inspired design reflecting Jeepƒ?Ts adventurous DNA through textures and sculptural elements.',
