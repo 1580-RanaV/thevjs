@@ -1,22 +1,50 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://vjs.bio"),
   title: "V Jaya Surya | Portfolio",
-  description: "Showcasing the journey, skills, and projects of V Jaya Surya. Discover my expertise, accomplishments, and passion for creating innovative solutions.",
-  keywords: "V Jaya Surya, portfolio, web development, projects, skills, resume, personal website",
+  description:
+    "Showcasing the journey, skills, and projects of V Jaya Surya. Discover my expertise, accomplishments, and passion for creating innovative solutions.",
+  keywords:
+    "V Jaya Surya, portfolio, web development, projects, skills, resume, personal website",
   author: "V Jaya Surya",
+  openGraph: {
+    title: "V Jaya Surya | Portfolio",
+    description:
+      "Showcasing the journey, skills, and projects of V Jaya Surya. Discover my expertise, accomplishments, and passion for creating innovative solutions.",
+    url: "https://vjs.bio",
+    siteName: "V Jaya Surya",
+    images: [
+      {
+        url: "/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "V Jaya Surya favicon",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "V Jaya Surya | Portfolio",
+    description:
+      "Showcasing the journey, skills, and projects of V Jaya Surya. Discover my expertise, accomplishments, and passion for creating innovative solutions.",
+    images: ["/android-chrome-192x192.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <meta name="apple-mobile-web-app-title" content="V Jaya Surya" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="manifest" href="/site.webmanifest" />

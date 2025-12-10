@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
+'use client';
+
+import React from 'react';
+import WorkAccordion from './WorkAccordion';
 
 const Freelance = () => {
-  const [openWork, setOpenWork] = useState(null);
-
   const workDetails = [
     {
       title: 'Mr. Jayaraju Duplex',
@@ -35,7 +35,7 @@ const Freelance = () => {
       title: 'Mr. Suman Villa',
       place: 'Hyderabad, India',
       description:
-        'This modern villa proposal in Hyderabad, designed for a family of 5-6 members, embraces innovative design with a dynamic play of levels. Skylights above the internal staircase enhance visual interest and natural light, reflecting the client’s encouragement of creative experimentation in the design.',
+        'This modern villa proposal in Hyderabad, designed for a family of 5-6 members, embraces innovative design with a dynamic play of levels. Skylights above the internal staircase enhance visual interest and natural light, reflecting the clientƒ?Ts encouragement of creative experimentation in the design.',
       images: [
         '/buildnext/3-1.jpg',
         '/buildnext/3-4.jpg',
@@ -49,7 +49,7 @@ const Freelance = () => {
       title: 'Buildnext Experience Store',
       place: 'Vizag, India',
       description:
-        'I designed the office and experience store for Buildnext in Vizag, aligning with the company’s goal to expand into central India. The design features a simple, crisp office space that blends functionality with aesthetics, creating an inviting and customer-centric environment.',
+        'I designed the office and experience store for Buildnext in Vizag, aligning with the companyƒ?Ts goal to expand into central India. The design features a simple, crisp office space that blends functionality with aesthetics, creating an inviting and customer-centric environment.',
       images: [
         '/buildnext/4-1.jpg',
         '/buildnext/4-2.jpg',
@@ -98,64 +98,7 @@ const Freelance = () => {
     },
   ];
 
-  const toggleWork = (index) => {
-    setOpenWork(openWork === index ? null : index);
-  };
-
-  return (
-    <div className="space-y-4 corner-plus">
-      {workDetails.map((work, index) => (
-        <div
-          onClick={() => toggleWork(index)}
-          key={index}
-          className="border-b pb-4 border-neutral-800 hover:cursor-pointer"
-        >
-          {/* Project Title */}
-          <div>
-            <h1
-              onClick={() => toggleWork(index)}
-              className="font-semibold cursor-pointer py-1 hover:text-neutral-500 transition-colors"
-            >
-              {work.title}
-            </h1>
-            <span
-              onClick={() => toggleWork(index)}
-              className="block text-sm font-semibold text-neutral-500 cursor-pointer hover:text-neutral-500 transition-colors"
-            >
-              {work.place}
-            </span>
-          </div>
-
-          {/* Project Details */}
-          {openWork === index && (
-            <div className="pb-6 pt-6 transition-all duration-300 ease-in-out">
-              <p className="text-neutral-200 text-justify font-regular mb-6">
-                {work.description}
-              </p>
-
-              <div className="space-y-4">
-                {work.images.map((image, imgIndex) => (
-                  <div
-                    key={imgIndex}
-                    className="w-full h-full bg-neutral-900 overflow-hidden rounded-lg"
-                  >
-                    <Image
-                      src={image}
-                      width={100}
-                      height={900}
-                      sizes="100vw"
-                      alt={`${work.title} - Image ${imgIndex + 1}`}
-                      className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-  );
+  return <WorkAccordion items={workDetails} />;
 };
 
 export default Freelance;

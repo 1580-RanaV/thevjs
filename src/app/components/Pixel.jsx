@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
+'use client';
+
+import React from 'react';
+import WorkAccordion from './WorkAccordion';
 
 const Pixel = () => {
-  const [openWork, setOpenWork] = useState(null);
-
   const workDetails = [
     {
       title: 'Aldar Headquarters',
@@ -97,7 +97,7 @@ const Pixel = () => {
       title: 'Jeep Showroom',
       place: 'Dubai, UAE',
       description:
-        'A rugged, nature-inspired design reflecting Jeep’s adventurous DNA through textures and sculptural elements.',
+        'A rugged, nature-inspired design reflecting Jeepƒ?Ts adventurous DNA through textures and sculptural elements.',
       images: [
         '/pixel/jeep/pic (1).png',
         '/pixel/jeep/pic (5).png',
@@ -140,7 +140,7 @@ const Pixel = () => {
       title: 'Roberto Cavalli Store',
       place: 'Italy',
       description:
-        'A bold interior using heavy textures and luxurious finishes to reflect Roberto Cavalli’s iconic design language.',
+        'A bold interior using heavy textures and luxurious finishes to reflect Roberto Cavalliƒ?Ts iconic design language.',
       images: [
         '/pixel/roberto/pic (1).png',
         '/pixel/roberto/pic (2).png',
@@ -179,64 +179,7 @@ const Pixel = () => {
     },
   ];
 
-  const toggleWork = (index) => {
-    setOpenWork(openWork === index ? null : index);
-  };
-
-  return (
-    <div className="space-y-4 corner-plus">
-      {workDetails.map((work, index) => (
-        <div
-          onClick={() => toggleWork(index)}
-          key={index}
-          className="border-b pb-4 border-neutral-800 hover:cursor-pointer"
-        >
-          {/* Project Title */}
-          <div>
-            <h1
-              onClick={() => toggleWork(index)}
-              className="font-semibold cursor-pointer py-1 hover:text-neutral-500 transition-colors"
-            >
-              {work.title}
-            </h1>
-            <span
-              onClick={() => toggleWork(index)}
-              className="block text-sm font-semibold text-neutral-500 cursor-pointer hover:text-neutral-500 transition-colors"
-            >
-              {work.place}
-            </span>
-          </div>
-
-          {/* Project Details */}
-          {openWork === index && (
-            <div className="pb-6 pt-6 transition-all duration-300 ease-in-out">
-              <p className="text-neutral-200 text-justify font-regular mb-6">
-                {work.description}
-              </p>
-
-              <div className="space-y-4">
-                {work.images.map((image, imgIndex) => (
-                  <div
-                    key={imgIndex}
-                    className="w-full h-full bg-neutral-900 overflow-hidden rounded-lg"
-                  >
-                    <Image
-                      src={image}
-                      width={100}
-                      height={900}
-                      sizes="100vw"
-                      alt={`${work.title} - Image ${imgIndex + 1}`}
-                      className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-  );
+  return <WorkAccordion items={workDetails} />;
 };
 
 export default Pixel;

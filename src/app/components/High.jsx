@@ -1,12 +1,9 @@
 "use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
+import React from 'react';
+import WorkAccordion from './WorkAccordion';
 
-const High = () => {
-  const [openWork, setOpenWork] = useState(null);
-
-  const workDetails = [
+const workDetails = [
     {
       title: 'BOSS Fashion Avennue Flagship Store',
       place: 'Dubai Mall, Dubai, UAE',
@@ -132,62 +129,6 @@ const High = () => {
     },
   ];
 
-  const toggleWork = (index) => {
-    setOpenWork(openWork === index ? null : index);
-  };
-
-  return (
-    <div className="space-y-4 corner-plus">
-      {workDetails.map((work, index) => (
-        <div
-          onClick={() => toggleWork(index)}
-          key={index}
-          className="border-b pb-4 border-neutral-800 hover:cursor-pointer"
-        >
-          {/* Project Title */}
-          <div>
-            <h1
-              onClick={() => toggleWork(index)}
-              className="font-semibold cursor-pointer py-1 hover:text-neutral-500 transition-colors"
-            >
-              {(work.title)}
-            </h1>
-            <span
-              onClick={() => toggleWork(index)}
-              className="block text-sm font-semibold text-neutral-500 cursor-pointer hover:text-neutral-500 transition-colors"
-            >
-              {(work.place)}
-            </span>
-          </div>
-
-          {/* Project Details */}
-          {openWork === index && (
-            <div className="pt-6 pb-6 transition-all duration-300 ease-in-out">
-              <p className="text-neutral-200 text-justify font-regular mb-6">
-                {work.description}
-              </p>
-              <div className="space-y-4">
-                {work.images.map((image, imgIndex) => (
-                  <div
-                    key={imgIndex}
-                    className="w-full h-full bg-neutral-900 overflow-hidden rounded-lg"
-                  >
-                    <Image
-                      src={image}
-                      width={100}
-                      height={900}
-                      alt={`${work.title} - Image ${imgIndex + 1}`}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-  );
-};
+const High = () => <WorkAccordion items={workDetails} />;
 
 export default High;
