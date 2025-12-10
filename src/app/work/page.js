@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
-import Freelance from "../components/freelance";
-import Pixel from "../components/pixel";
-import Adidas from "../components/adidas";
+import Freelance from "../components/Freelance";
+import Pixel from "../components/Pixel";
+import Adidas from "../components/Adidas";
 import Footer from "../components/Footer";
 import High from "../components/High";
 
