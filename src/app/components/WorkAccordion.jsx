@@ -5,18 +5,40 @@ import Image from 'next/image';
 
 const WorkAccordion = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [progress, setProgress] = useState({ active: null, loaded: 0, total: 0 });
+  const [progress, setProgress] = useState({
+    active: null,
+    loaded: 0,
+    total: 0,
+    showContent: false,
+  });
   const itemRefs = useRef([]);
+  const loaderStart = useRef(0);
+  const loaderTimeout = useRef(null);
+  const MIN_LOADER_MS = 400;
 
   const handleToggle = (index) => {
     if (openIndex === index) {
       setOpenIndex(null);
-      setProgress({ active: null, loaded: 0, total: 0 });
+      setProgress({ active: null, loaded: 0, total: 0, showContent: false });
+      if (loaderTimeout.current) {
+        clearTimeout(loaderTimeout.current);
+        loaderTimeout.current = null;
+      }
       return;
     }
 
     const total = items[index]?.images?.length || 0;
-    setProgress({ active: index, loaded: 0, total });
+    if (loaderTimeout.current) {
+      clearTimeout(loaderTimeout.current);
+      loaderTimeout.current = null;
+    }
+    loaderStart.current = performance.now();
+    setProgress({
+      active: index,
+      loaded: 0,
+      total,
+      showContent: total === 0,
+    });
     setOpenIndex(index);
 
     const target = itemRefs.current[index];
@@ -32,6 +54,19 @@ const WorkAccordion = ({ items }) => {
     setProgress((prev) => {
       if (prev.active !== index) return prev;
       const loaded = Math.min(prev.loaded + 1, prev.total);
+
+      if (loaded >= prev.total) {
+        const elapsed = performance.now() - loaderStart.current;
+        const delay = Math.max(0, MIN_LOADER_MS - elapsed);
+
+        loaderTimeout.current = window.setTimeout(() => {
+          setProgress((current) => {
+            if (current.active !== index) return current;
+            return { ...current, loaded, showContent: true };
+          });
+        }, delay);
+      }
+
       return { ...prev, loaded };
     });
   };
@@ -45,7 +80,8 @@ const WorkAccordion = ({ items }) => {
     <div className="space-y-4 corner-plus">
       {items.map((work, index) => {
         const isOpen = openIndex === index;
-        const isLoading = progress.active === index && progress.loaded < progress.total;
+        const isLoading =
+          progress.active === index && !progress.showContent && progress.total > 0;
 
         return (
           <div
